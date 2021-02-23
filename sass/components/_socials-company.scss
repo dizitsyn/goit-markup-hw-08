@@ -1,0 +1,43 @@
+.socials-company {
+  @extend %list;
+  display: flex;
+  margin-top: 20px;
+
+  &__box {
+    @extend %centered-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $footer-socials-color;
+
+    transition-property: background-color;
+    transition-duration: $trans-dur;
+    transition-timing-function: $cubik;
+  }
+}
+
+.socials-company__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-company__link {
+  &:focus .socials-company__box,
+  &:hover .socials-company__box,
+  &:focus .socials {
+    background-color: $accent-color;
+  }
+  &:focus .icon-socials,
+  .socials:hover .icon-socials {
+    fill: $second-accent-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.socials-company-icon {
+  fill: $second-accent-color;
+  transition-property: fill;
+  transition-duration: $trans-dur;
+}

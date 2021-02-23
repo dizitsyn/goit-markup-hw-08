@@ -1,0 +1,123 @@
+.order {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+
+  &__fields {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    flex-direction: column-reverse;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    &--margin {
+      margin-left: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 4px;
+
+    transition-property: color;
+    transition-timing-function: $cubik;
+    transition-duration: $trans-dur;
+  }
+  &__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &[type='checkbox'] {
+      padding: 0;
+      margin: 0;
+      height: 0;
+      border: none;
+      position: absolute;
+    }
+    &:checked + .order__terms {
+      background-color: $accent-color;
+      background-image: url('../images/v.svg');
+      background-size: cover;
+      background-origin: border-box;
+      border-color: $accent-color;
+    }
+
+    &-lbl {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__terms {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+
+    transition-duration: $trans-dur;
+    transition-timing-function: $cubik;
+  }
+  &__icon {
+    position: absolute;
+    transform: scale(2) translate(12px, -4px);
+    transition-property: fill;
+    transition-timing-function: $cubik;
+    transition-duration: $trans-dur;
+  }
+  &__input {
+    margin: 0;
+    padding-left: 40px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-duration: $trans-dur;
+    transition-timing-function: $cubik;
+
+    &--textarea::placeholder {
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &--textarea {
+      margin-top: 4px;
+      width: 448px;
+      height: 120px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      resize: none;
+    }
+
+    &:focus + .order__label {
+      color: $accent-color;
+    }
+    &:hover ~ .order__icon,
+    &:focus ~ .order__icon {
+      fill: $accent-color;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $accent-color;
+    }
+  }
+}
+
+.contract {
+  color: $accent-color;
+}

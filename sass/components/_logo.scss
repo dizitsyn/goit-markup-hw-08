@@ -1,0 +1,25 @@
+.logo-link {
+  padding: 0;
+  margin: 0;
+
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: $primary-text-color;
+  text-decoration: none;
+  outline-color: $accent-color;
+
+  transition-property: color;
+  transition-duration: $trans-dur;
+  transition-timing-function: $cubik;
+
+  &__first-word {
+    color: $accent-color;
+  }
+
+  &__second-wird {
+    color: $second-accent-color;
+  }
+}

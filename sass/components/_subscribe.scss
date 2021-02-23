@@ -1,0 +1,11 @@
+.subscribe-block {
+  @extend %centered-flex;
+
+  &__call {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $second-accent-color;
+  }
+}

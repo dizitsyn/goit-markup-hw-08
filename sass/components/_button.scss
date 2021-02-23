@@ -1,0 +1,38 @@
+.button {
+  max-width: 250px;
+  max-height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  outline: none;
+  color: $second-accent-color;
+  background-color: $accent-color;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color;
+  transition-duration: $trans-dur;
+  transition-timing-function: $cubik;
+
+  &--positioning {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -15px);
+    margin-top: 30px;
+  }
+
+  &:focus {
+    background-color: #188ce8;
+  }
+
+  &:hover {
+    background-color: #188ce8;
+  }
+}

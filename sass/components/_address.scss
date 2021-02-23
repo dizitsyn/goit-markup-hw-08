@@ -1,0 +1,82 @@
+.address {
+  margin-left: auto;
+
+  &-list {
+    display: flex;
+    @extend %list;
+
+    &--column {
+      display: inline-block;
+      padding: 0;
+      margin-top: 9px;
+    }
+    &__icon {
+      margin-right: 10px;
+
+      fill: $secondary-text-color;
+
+      transition-property: fill;
+      transition-duration: $trans-dur;
+      transition-timing-function: $cubik;
+    }
+  }
+}
+
+.address-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.address-list__link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  color: $secondary-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: $trans-dur;
+  transition-timing-function: $cubik;
+
+  &--padding {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: $fotter-link-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &:focus {
+    outline: none;
+    color: $accent-color;
+  }
+
+  &:focus .address-list__icon {
+    fill: $accent-color;
+  }
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:hover .address-list__icon {
+    fill: $accent-color;
+  }
+}
+
+.address-list__item--margin {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

@@ -1,0 +1,14 @@
+.button-sub {
+  align-items: center;
+  justify-content: left;
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-15px, -50%);
+
+    fill: $second-accent-color;
+  }
+}

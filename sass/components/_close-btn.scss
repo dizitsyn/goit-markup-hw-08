@@ -1,0 +1,24 @@
+.close-btn {
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  outline: 0;
+  background-color: $background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &__icon {
+    top: 9px;
+    right: 10px;
+    fill: black;
+  }
+
+  &:hover .close-btn__icon,
+  &:focus .close-btn__icon {
+    fill: $accent-color;
+  }
+}

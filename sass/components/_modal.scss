@@ -1,0 +1,26 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+
+  background-color: $background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform $trans-dur $cubik;
+
+  &__title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+}
