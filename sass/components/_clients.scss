@@ -1,29 +1,39 @@
 .clients {
   background-color: $background-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
   }
 }
 
 .clients-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @extend %list;
 
   margin-top: 50px;
 
+  &__item {
+    width: 46.666%;
+  }
+
   &__box {
     @extend %centered-flex;
 
-    width: 170px;
+    max-width: 210px;
     height: 90px;
 
     border: 1px solid #afb1b8;
@@ -40,6 +50,10 @@
     &:hover {
       border-color: $accent-color;
     }
+  }
+
+  &__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
   }
 }
 
