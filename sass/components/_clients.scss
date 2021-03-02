@@ -83,3 +83,25 @@
   transition-duration: $trans-dur;
   transition-timing-function: $cubik;
 }
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+
+    &__item {
+      max-width: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    &__item {
+      max-width: 170px;
+    }
+  }
+}

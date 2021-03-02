@@ -107,3 +107,28 @@
     fill: $second-accent-color;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .member-list {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__hand {
+      max-width: 354px;
+      max-height: 536px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .member-list {
+    &__hand {
+      max-width: 270px;
+      max-height: 428px;
+      margin-bottom: 30px;
+    }
+  }
+}

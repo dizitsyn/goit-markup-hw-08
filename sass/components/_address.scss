@@ -1,14 +1,16 @@
 @media screen and (min-width: 1px) {
   .address {
     margin-left: auto;
-
     display: none;
 
     &-list {
+      display: block;
+      list-style: none;
       display: flex;
 
       &--column {
-        display: inline-block;
+        display: block;
+        list-style: none;
         padding: 0;
         margin-top: 8px;
       }
@@ -83,8 +85,6 @@
   }
 }
 
-// ---------------------------------------------------------768----------------------------------------
-
 @media screen and (min-width: 768px) {
   .address {
     display: flex;
@@ -100,16 +100,24 @@
         display: inline-block;
         padding: 0;
         margin-top: 8px;
+        list-style: none;
       }
 
       &__icon {
-        margin-right: 10px;
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
 
         fill: $secondary-text-color;
 
         transition-property: fill;
         transition-duration: $trans-dur;
         transition-timing-function: $cubik;
+
+        &--size {
+          width: 10px;
+          height: 14px;
+        }
       }
     }
   }
@@ -121,6 +129,92 @@
   .address-list__link {
     display: flex;
     align-items: center;
+
+    text-decoration: none;
+    color: $secondary-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: $trans-dur;
+    transition-timing-function: $cubik;
+
+    &--padding {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      color: $fotter-link-color;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+    }
+    &:focus {
+      outline: none;
+      color: $accent-color;
+    }
+
+    &:focus .address-list__icon {
+      fill: $accent-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:hover .address-list__icon {
+      fill: $accent-color;
+    }
+  }
+
+  .address-list__item--margin {
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-left: auto;
+
+    &-list {
+      display: flex;
+      flex-direction: row;
+
+      &--column {
+        display: inline-block;
+        padding: 0;
+        margin-top: 9px;
+      }
+      &__icon {
+        width: 16px;
+        height: 12px;
+
+        &--size {
+          width: 10px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  .address-list__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .address-list__link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     text-decoration: none;
     color: $secondary-text-color;
@@ -163,8 +257,10 @@
   }
 
   .address-list__item--margin {
+    margin: 0;
+
     &:not(:last-child) {
-      margin-bottom: 0px;
+      margin-bottom: 9px;
     }
   }
 }
