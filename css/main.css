@@ -189,18 +189,18 @@
   color: #757575;
 }
 
-.nav-list__menu-address-list__item {
+.nav-list__item {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
 
-.nav-list__menu-address-list__item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   margin-bottom: 35px;
 }
 
-.nav-list__menu-address-list__link {
+.nav-list__link {
   padding-bottom: 0px;
   padding-top: 0px;
   color: #212121;
@@ -213,21 +213,21 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__menu-address-list__link:hover {
+.nav-list__link:hover {
   color: #2196f3;
 }
 
-.nav-list__menu-address-list__link:focus {
+.nav-list__link:focus {
   outline: none;
   color: #2196f3;
 }
 
-.nav-list__menu-address-list__current {
+.nav-list__current {
   color: #2196f3;
   position: relative;
 }
 
-.nav-list__menu-address-list__current::after {
+.nav-list__current::after {
   content: '';
   position: absolute;
   background-color: #2196f3;
@@ -239,7 +239,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .nav-list .navigation {
+  .navigation {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -251,7 +251,7 @@
             align-items: center;
     padding: 0;
   }
-  .nav-list .nav-list {
+  .nav-list {
     position: static;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -260,18 +260,18 @@
     padding: 0;
     margin: 0px 0px 0px 88px;
   }
-  .nav-list .nav-list__item {
+  .nav-list__item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
   }
-  .nav-list .nav-list__item:not(:last-child) {
+  .nav-list__item:not(:last-child) {
     margin-right: 50px;
     margin-bottom: 0px;
   }
-  .nav-list .nav-list__link {
+  .nav-list__link {
     padding-bottom: 34px;
     padding-top: 0px;
     color: #212121;
@@ -283,18 +283,18 @@
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav-list .nav-list__link:hover {
+  .nav-list__link:hover {
     color: #2196f3;
   }
-  .nav-list .nav-list__link:focus {
+  .nav-list__link:focus {
     outline: none;
     color: #2196f3;
   }
-  .nav-list .nav-list__current {
+  .nav-list__current {
     color: #2196f3;
     position: relative;
   }
-  .nav-list .nav-list__current::after {
+  .nav-list__current::after {
     content: '';
     position: absolute;
     background-color: #2196f3;
@@ -307,7 +307,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .nav-list .navigation {
+  .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -315,13 +315,13 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .nav-list .nav-list {
+  .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 95px;
   }
-  .nav-list .nav-list__item {
+  .nav-list__item {
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -330,10 +330,10 @@
     letter-spacing: 0.02em;
     text-decoration: none;
   }
-  .nav-list .nav-list__item:not(:last-child) {
+  .nav-list__item:not(:last-child) {
     margin-right: 50px;
   }
-  .nav-list .nav-list__link {
+  .nav-list__link {
     padding-bottom: 32px;
     padding-top: 32px;
     color: #212121;
@@ -345,18 +345,18 @@
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .nav-list .nav-list__link:hover {
+  .nav-list__link:hover {
     color: #2196f3;
   }
-  .nav-list .nav-list__link:focus {
+  .nav-list__link:focus {
     outline: none;
     color: #2196f3;
   }
-  .nav-list .nav-list__current {
+  .nav-list__current {
     color: #2196f3;
     position: relative;
   }
-  .nav-list .nav-list__current::after {
+  .nav-list__current::after {
     content: '';
     position: absolute;
     background-color: #2196f3;
@@ -2147,10 +2147,15 @@
     padding: 0;
     list-style: none;
   }
+  .projects-list__company-name {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .projects-list__item {
-    margin-bottom: 30px;
     max-width: 370px;
     height: 404px;
+    margin-bottom: 30px;
   }
   .projects-list__item:not(:last-child) {
     margin-right: 30px;

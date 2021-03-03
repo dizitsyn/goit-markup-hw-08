@@ -127,10 +127,14 @@
     padding: 0;
     list-style: none;
 
+    &__company-name {
+      height: fit-content;
+    }
+
     &__item {
-      margin-bottom: 30px;
       max-width: 370px;
       height: 404px;
+      margin-bottom: 30px;
 
       &:not(:last-child) {
         margin-right: 30px;
