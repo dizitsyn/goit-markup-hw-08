@@ -21,11 +21,37 @@
                 <a href="./" class="logo-link">
                     <span class="logo-link__first-word">Web</span>Studio
                 </a>
+                
                 <ul class="nav-list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__current">Студия</a></li>
                     <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                     <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
-                </ul>
+
+                        <!-- <ul class="nav-list__menu-address-list">
+                            <li class="nav-list__menu-address-list--item"><a href="tel:+380961111111" class="nav-list__menu-address-list--phone">+38 096 111 11 11</a></li>
+                            <li class="nav-list__menu-address-list--item"><a href="mailto:info@devstudio.com" class="nav-list__menu-address-list--mail">info@devstudio.com</a></li>
+                        </ul>
+
+                        <ul class="nav-list__menu-socials">
+                            <li class="nav-list__menu-socials--item"><a href="" class="nav-list__menu-socials--link">Instagram</a></li>
+                            <li class="nav-list__menu-socials--item"><a href="" class="nav-list__menu-socials--link">Twitter</a></li>
+                            <li class="nav-list__menu-socials--item"><a href="" class="nav-list__menu-socials--link">Facebook</a></li>
+                            <li class="nav-list__menu-socials--item"><a href="" class="nav-list__menu-socials--link">LinkedIn</a></li>
+                        </ul>
+                     -->
+                            
+                </ul>   
+                
+                <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button data-menu-open>
+                    <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <!-- <use class="menu-button__icon-menu" href="./images/main-opt.svg#icon-close"></use> -->
+                        <use class="menu-button__icon-cross" href="./images/main-opt.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                
+                
+
+
             </nav>
 
             <address class="address">
@@ -48,6 +74,7 @@
                     </li>
                 </ul>
             </address>
+            
         </div>
     </header>
     
@@ -106,15 +133,26 @@
                 <h2 class="occupation__title">Чем мы занимаемся</h2>
                 <ul class="occupation-list">
                     <li class="occupation-list__item">
-                        <img src="./images/img-1.jpg" alt="Разработка сайтов" width="370" height="294" class="occupation-list__photo">
+                        <picture>
+                            <source srcset="./images/product/product-1@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/img-1.jpg" alt="Разработка сайтов" width="370" height="294" class="occupation-list__photo">
+                        </picture>
+                        
                         <h3 class="occupation-list__name">Десктопные приложения</h3>
                     </li>
                     <li class="occupation-list__item">
-                        <img src="./images/img-2.jpg" alt="Дизайн интерфейсов" width="370" height="294" class="occupation-list__photo">
+                        <picture>
+                            <source srcset="./images/product/product-2@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/img-2.jpg" alt="Дизайн интерфейсов" width="370" height="294" class="occupation-list__photo">
+                        </picture>
                         <h3 class="occupation-list__name">Мобильные приложения</h3>
                     </li>
                     <li class="occupation-list__item">
-                        <img src="./images/img-3.jpg" alt="Дизайн" width="370" height="294" class="occupation-list__photo">
+                        <picture>
+                            <source srcset="./images/product/product-3@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/img-3.jpg" alt="Дизайн" width="370" height="294" class="occupation-list__photo">
+                        </picture>
+                        
                         <h3 class="occupation-list__name">Дизайнерские решения</h3>
                     </li>
                 </ul>                
@@ -126,7 +164,29 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="member-list">
                     <li class="member-list__hand">
-                        <img src="./images/igor450x460.jpg" alt="Фотография Игоря Демьяненко" class="member-list__photo">
+                        
+
+<picture>
+    <source srcset="
+                        ./images/team/igor-mob.jpg,
+                        ./images/team/igor-mob@2.jpg 2x
+                    "     media="(max-width: 767px)" />
+    <source srcset="
+                        ./images/team/igor-tab.jpg,
+                        ./images/team/igor-tab@2.jpg 2x
+                    "   media="(max-width: 1199px)" />
+    <source srcset="./images/team/igor-pc@2.jpg 2x" 
+    media="(min-width: 1200px)" />
+    <img src="./images/team/igor-pc.jpg" alt="Фотография Игоря Демьяненко" class="member-list__photo">
+</picture>
+
+
+
+
+
+
+
+                        
                         <h3 class="member-list__name">Игорь Демьяненко</h3>
                         <p lang="en" class="member-list__profession">Product Designer</p>
                         <ul class="social-links">
@@ -169,7 +229,27 @@
                         </ul>
                     </li>
                     <li class="member-list__hand">
-                        <img src="./images/olga450x460.jpg" alt="Фотография Игоря Демьяненко" class="member-list__photo">
+
+<picture>
+    <source srcset="
+                        ./images/team/olga-mob.jpg,
+                        ./images/team/olga-mob@2.jpg 2x
+                    " media="(max-width: 767px)" />
+    <source srcset="
+                        ./images/team/olga-tab.jpg,
+                        ./images/team/olga-tab@2.jpg 2x
+                    " media="(max-width: 1199px)" />
+    <source srcset="./images/team/olga-pc@2.jpg 2x" media="(min-width: 1200px)" />
+    <img src="./images/team/olga-pc.jpg" alt="Фотография Ольги Репиной" class="member-list__photo">
+</picture>
+
+
+
+
+
+
+
+                       
                         <h3 class="member-list__name">Ольга Репина</h3>
                         <p lang="en" class="member-list__profession">Frontend Developer</p>
                         <ul class="social-links">
@@ -212,7 +292,26 @@
                         </ul>
                     </li>
                     <li class="member-list__hand">
-                        <img src="./images/misha450x460.jpg" alt="Фотография Игоря Демьяненко" class="member-list__photo">
+
+<picture>
+    <source srcset="
+                        ./images/team/kolya-mob.jpg,
+                        ./images/team/kolya-mob@2.jpg 2x
+                    " media="(max-width: 767px)" />
+    <source srcset="
+                        ./images/team/kolya-tab.jpg,
+                        ./images/team/kolya-tab@2.jpg 2x
+                    " media="(max-width: 1199px)" />
+    <source srcset="./images/team/kolya-pc@2.jpg 2x" media="(min-width: 1200px)" />
+    <img src="./images/team/kolya-pc.jpg" alt="Фотография Николая Тарасова" class="member-list__photo">
+</picture>
+
+
+
+
+
+
+                       
                         <h3 class="member-list__name">Николай Тарасов</h3>
                         <p lang="en" class="member-list__profession">Marketing</p>
                         <ul class="social-links">
@@ -255,7 +354,23 @@
                         </ul>
                     </li>
                     <li class="member-list__hand">
-                        <img src="./images/kolya450x460.jpg" alt="Фотография Игоря Демьяненко" class="member-list__photo">
+
+<picture>
+    <source srcset="
+                        ./images/team/misha-mob.jpg,
+                        ./images/team/misha-mob@2.jpg 2x
+                    " media="(max-width: 767px)" />
+    <source srcset="
+                        ./images/team/misha-tab.jpg,
+                        ./images/team/misha-tab@2.jpg 2x
+                    " media="(max-width: 1199px)" />
+    <source srcset="./images/team/misha-pc@2.jpg 2x" media="(min-width: 1200px)" />
+    <img src="./images/team/misha-pc.jpg" alt="Фотография Михаила Ермакова" class="member-list__photo">
+</picture>
+
+
+
+                            
                         <h3 class="member-list__name">Михаил Ермаков</h3>
                         <p lang="en" class="member-list__profession">UI Designer</p>
                         <ul class="social-links">
@@ -494,9 +609,49 @@
     </div>
 </div>
 
+<div class="menu-mobile is-closed" data-menu>
+    <div class="menu-style">
+        <button type="button" class="menu-button is-open" aria-expanded="false" data-menu-button data-menu-close="">
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                <use class="menu-button__icon-menu" href="./images/main-opt.svg#icon-close"></use>
+                <!-- <use class="menu-button__icon-cross" href="./images/main-opt.svg#icon-menu"></use> -->
+            </svg>
+        </button>
+        <ul class="mobil__site-nav list">
+            <li><a class="link current" href="./index.html">Студия</a></li>
+            <li>
+                <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="link" href="">Контакты</a></li>
+        </ul>
+        <ul class="mobil__auth-nav list">
+            <li>
+                <a class="nav-list__menu-address-list--phone" href="tel:+380961111111">
+                    +38 096 111 11 11
+                </a>
+            </li>
+            <li>
+                <a class="nav-list__menu-address-list--mail" lang="en" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="social__menu">
+            <li class="social__item">
+                <a href="" class="nav-list__menu-socials--link">Instagram</a>
+            </li>
+            <li class="social__item"><a href="" class="nav-list__menu-socials--link">Twitter</a></li>
+            <li class="social__item"><a href="" class="nav-list__menu-socials--link">Facebook</a></li>
+            <li class="social__item"><a href="" class="nav-list__menu-socials--link">LinkedIn</a></li>
+        </ul>
+    </div>
+</div>
 
-<script src="./js/modal.js">
-</script>
+
+
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/burger.js"></script>
+
         
 </body>
 </html>

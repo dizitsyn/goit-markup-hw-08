@@ -128,3 +128,9 @@
 .contract {
   color: $accent-color;
 }
+
+@media screen and (max-width: 1200px) {
+  .order__fields {
+    margin-bottom: 10px;
+  }
+}
