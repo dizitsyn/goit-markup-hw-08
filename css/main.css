@@ -1913,7 +1913,7 @@
 @media screen and (min-width: 1200px) {
   .portfolio {
     padding-top: 94px;
-    border-bottom: 94px;
+    padding-bottom: 94px;
   }
 }
 
