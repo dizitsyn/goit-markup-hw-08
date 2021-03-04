@@ -37,5 +37,8 @@
       text-transform: uppercase;
       color: $second-accent-color;
     }
+    &__socials {
+      align-items: flex-start;
+    }
   }
 }

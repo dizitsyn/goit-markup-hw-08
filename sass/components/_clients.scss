@@ -99,6 +99,21 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+  }
+
   .clients-list {
     &__item {
       max-width: 170px;
